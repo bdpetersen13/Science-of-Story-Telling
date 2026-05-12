@@ -6,6 +6,8 @@ A fully client-side, gamified interactive course that teaches the craft of story
 
 Students work through **35 chapters** organized into 4 parts, reading content and completing embedded quizzes. After finishing all chapters in a part, they unlock a **Boss Assessment** — a harder cumulative quiz (80% passing score) that awards a special badge and 500 XP. Completing the full course earns a certificate.
 
+<img width="2558" height="1330" alt="Screenshot 2026-05-12 at 5 47 19 PM" src="https://github.com/user-attachments/assets/c53b1345-142b-4b1a-946b-91599d1f8bea" />
+
 ### Course Structure
 
 | Part | Chapters | Topic |
