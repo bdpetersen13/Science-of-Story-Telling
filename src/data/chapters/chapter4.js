@@ -1,0 +1,168 @@
+export const chapter4 = {
+  id: 4,
+  sections: [
+    {
+      id: 'intro', type: 'content', title: 'The Social Brain',
+      content: [
+        { type: 'text', value: 'Why do we care about fictional people? Why do we cry when a character dies, rage when they\'re betrayed, cheer when they triumph? The answer lies in **theory of mind** — the brain\'s remarkable ability to model other minds.' },
+        { type: 'callout', variant: 'key-concept', value: 'Theory of mind is the cognitive ability to attribute beliefs, desires, intentions, and emotions to other people. It\'s the neural machinery that stories hijack — we automatically try to understand what characters think and feel.' },
+        { type: 'text', value: 'Storr argues that our brains evolved to be "domesticated" — shaped by the pressures of social living. We needed to predict what others would do, form alliances, detect cheaters, and navigate status hierarchies. This social intelligence is what makes us compulsive storytellers and story consumers.' },
+      ],
+    },
+    {
+      id: 'theory-of-mind', type: 'content', title: 'Modeling Other Minds',
+      content: [
+        { type: 'text', value: 'Theory of mind develops in children around age 4. Before that, children struggle to understand that other people can have beliefs different from their own. The classic test: a child watches a puppet place a ball in Box A, then leave. Another puppet moves the ball to Box B. Where will the first puppet look for the ball?' },
+        { type: 'text', value: 'Children under 4 say "Box B" — they can\'t separate their own knowledge from the puppet\'s. After 4, they understand: the puppet will look in Box A, because *that\'s where the puppet believes the ball is*. This is theory of mind in action.' },
+        { type: 'text', value: 'For storytellers, theory of mind is **the fundamental technology of fiction**. Every moment of dramatic irony depends on it. Every unreliable narrator exploits it. Every character conflict arises from characters having different models of reality — and the reader\'s ability to hold multiple models simultaneously.' },
+      ],
+    },
+    {
+      id: 'quiz-1', type: 'quiz', quizType: 'formative', title: 'Theory of Mind Check',
+      questions: [
+        {
+          id: 'ch4-q1', type: 'multiple-choice', conceptKey: 'theory-of-mind',
+          question: 'Dramatic irony depends on the audience\'s ability to:',
+          options: [
+            { id: 'a', text: 'Predict the plot based on genre conventions', correct: false },
+            { id: 'b', text: 'Hold their own knowledge separately from a character\'s false belief', correct: true },
+            { id: 'c', text: 'Understand the author\'s biographical context', correct: false },
+            { id: 'd', text: 'Empathize with the antagonist', correct: false },
+          ],
+          feedback: {
+            correct: 'Exactly! Dramatic irony is a direct application of theory of mind. We know something the character doesn\'t, and that gap creates tension.',
+            incorrect: 'Dramatic irony requires us to simultaneously hold **two models**: what WE know, and what the CHARACTER believes. That\'s theory of mind.',
+          },
+          hint: 'What cognitive ability lets you know something a character doesn\'t?',
+        },
+      ],
+    },
+    {
+      id: 'empathy', type: 'content', title: 'Stories as Empathy Engines',
+      content: [
+        { type: 'text', value: 'When we engage with a character through theory of mind, something remarkable happens: we don\'t just *observe* their emotions — we **simulate** them. Our mirror neuron systems and affective empathy circuits activate, creating echoes of the character\'s feelings in our own bodies.' },
+        { type: 'text', value: 'This is why diverse fiction matters beyond representation. Studies show that reading literary fiction temporarily **improves** theory of mind performance. Reading about people different from ourselves literally exercises our empathy muscles.' },
+        { type: 'callout', variant: 'insight', value: 'Fiction is the only art form that gives us access to another person\'s inner experience. Film shows us faces; music evokes moods. But only prose can put us *inside* another mind, thinking their thoughts, feeling their feelings.' },
+        { type: 'text', value: 'For writers, this means **character interiority** is your superpower. Don\'t just show what characters do — show what they *think* and *feel* and *want*. Give readers access to the inner life, and theory of mind will do the rest.' },
+      ],
+    },
+    {
+      id: 'motivation', type: 'content', title: 'The Engine of Want',
+      content: [
+        { type: 'text', value: 'Characters need to **want** things. This seems obvious, but many beginning writers create characters who are merely reactive — things happen *to* them, but they don\'t actively *pursue* anything.' },
+        { type: 'text', value: 'Human beings are obsessed with motivation. When someone does something unexpected, our first question is always *why?* This is theory of mind in action — we need to understand the intention behind the action.' },
+        { type: 'list', items: [
+          '**Surface want**: What the character consciously pursues (find the killer, win the competition)',
+          '**Deep need**: What the character unconsciously needs but may not recognize (connection, self-worth, acceptance)',
+          '**The gap**: The tension between want and need drives the deepest stories',
+        ] },
+        { type: 'text', value: 'The most compelling characters have wants we understand and needs we recognize — even when the character themselves is blind to the gap between them.' },
+      ],
+    },
+    {
+      id: 'quiz-2', type: 'quiz', quizType: 'formative', title: 'Character Motivation',
+      questions: [
+        {
+          id: 'ch4-q2', type: 'scenario', conceptKey: 'character-motivation',
+          question: 'A detective character is obsessed with solving a cold case. Based on this chapter, what would make this character most compelling?',
+          options: [
+            { id: 'a', text: 'Giving them exceptional detective skills that make them admirable', correct: false },
+            { id: 'b', text: 'Creating a gap between their surface want (solve the case) and a deeper unacknowledged need', correct: true },
+            { id: 'c', text: 'Adding more complex clues to make the mystery harder', correct: false },
+            { id: 'd', text: 'Giving them a romantic subplot for emotional balance', correct: false },
+          ],
+          feedback: {
+            correct: 'Yes! Maybe they need to solve the case to prove their worth after a failure. Maybe the victim reminds them of someone they couldn\'t save. The gap between want and need is where the deepest characterization lives.',
+            incorrect: 'The most compelling characters have a **gap** between what they consciously want and what they unconsciously need. That gap drives internal conflict.',
+          },
+          hint: 'Think about the difference between what someone wants and what they need.',
+        },
+      ],
+    },
+    {
+      id: 'exercise', type: 'exercise', title: 'The Mind-Reading Workshop',
+      exercises: [
+        {
+          id: 'ch4-ex1', type: 'structured-template', xpReward: 100,
+          title: 'Want vs. Need',
+          instructions: 'Create a character with a clear gap between their surface want and their deep need.',
+          fields: [
+            { id: 'character', label: 'Describe your character briefly', placeholder: 'Who are they? What\'s their situation?' },
+            { id: 'want', label: 'Surface want (what they consciously pursue)', placeholder: 'What do they say they want? What are they actively working toward?' },
+            { id: 'need', label: 'Deep need (what they unconsciously require)', placeholder: 'What do they actually need but can\'t or won\'t admit?' },
+            { id: 'gap', label: 'How does the gap between want and need create conflict?', placeholder: 'How does pursuing the want actually prevent them from getting the need?' },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'quiz-summative', type: 'quiz', quizType: 'summative', title: 'Chapter 4 Assessment', passingScore: 70,
+      questions: [
+        {
+          id: 'ch4-s1', type: 'multiple-choice', conceptKey: 'theory-of-mind',
+          question: 'Theory of mind is essential for fiction because it allows readers to:',
+          options: [
+            { id: 'a', text: 'Predict plot twists accurately', correct: false },
+            { id: 'b', text: 'Model what characters believe, want, and feel — even when it differs from reality', correct: true },
+            { id: 'c', text: 'Judge whether characters are morally good or bad', correct: false },
+            { id: 'd', text: 'Understand the author\'s writing process', correct: false },
+          ],
+          feedback: { correct: 'Yes! Theory of mind lets us inhabit perspectives different from our own — the core technology of fiction.', incorrect: 'Theory of mind is about **modeling other minds** — understanding beliefs, desires, and emotions that may differ from our own.' },
+        },
+        {
+          id: 'ch4-s2', type: 'multiple-choice', conceptKey: 'empathy-engine',
+          question: 'Research suggests that reading literary fiction can:',
+          options: [
+            { id: 'a', text: 'Permanently change personality traits', correct: false },
+            { id: 'b', text: 'Temporarily improve theory of mind performance', correct: true },
+            { id: 'c', text: 'Replace real-world social experience', correct: false },
+            { id: 'd', text: 'Decrease empathy by normalizing fictional suffering', correct: false },
+          ],
+          feedback: { correct: 'Correct! Studies show reading fiction exercises our empathy circuits, temporarily boosting our ability to read real people.', incorrect: 'Research shows fiction **temporarily improves** theory of mind. It exercises empathy muscles, but doesn\'t permanently rewire personality.' },
+        },
+        {
+          id: 'ch4-s3', type: 'multiple-choice', conceptKey: 'character-motivation',
+          question: 'The most dramatically compelling characters typically have:',
+          options: [
+            { id: 'a', text: 'Simple, clearly stated motivations', correct: false },
+            { id: 'b', text: 'No clear motivation, keeping them mysterious', correct: false },
+            { id: 'c', text: 'A gap between their conscious want and their unconscious need', correct: true },
+            { id: 'd', text: 'Motivations that change every chapter', correct: false },
+          ],
+          feedback: { correct: 'Perfect! The want/need gap creates internal conflict that drives both character and plot.', incorrect: 'The deepest characters have a **gap** between conscious want and unconscious need. This gap creates the internal conflict that powers great stories.' },
+        },
+        {
+          id: 'ch4-s4',
+          type: 'matching',
+          conceptKey: 'theory-of-mind',
+          question: 'Match each storytelling concept to its function:',
+          pairs: [
+            { id: 'a', left: 'Theory of Mind', right: 'Ability to model what others think and feel' },
+            { id: 'b', left: 'Dramatic Irony', right: 'Audience knows what characters don\'t' },
+            { id: 'c', left: 'Character Want', right: 'What the character consciously pursues' },
+            { id: 'd', left: 'Character Need', right: 'The deeper transformation required for growth' },
+          ],
+          feedback: {
+            correct: 'Excellent! These concepts work together to create psychologically compelling characters.',
+            incorrect: 'Review: Theory of Mind models other perspectives, Dramatic Irony creates tension through knowledge gaps, Want is conscious desire, Need is unconscious growth requirement.',
+          },
+        },
+      ],
+    },
+    {
+      id: 'summary', type: 'content', title: 'Chapter Summary',
+      content: [
+        { type: 'text', value: '## Key Takeaways from Chapter 4' },
+        { type: 'list', items: [
+          '**Theory of mind** is the cognitive foundation of all fiction',
+          '**Dramatic irony** is theory of mind made visible — we know what characters don\'t',
+          '**Fiction is an empathy engine** — it exercises our ability to model other minds',
+          '**Character interiority** is prose fiction\'s unique superpower',
+          '**Want vs. need** creates the deepest character conflicts',
+          '**Motivation** must be clear — readers need to understand why characters act',
+        ] },
+        { type: 'callout', variant: 'next', value: '**Next up**: Chapter 5 — Salience. Learn how the brain decides what matters in a story, and how to signal importance to your reader.' },
+      ],
+    },
+  ],
+};

@@ -1,0 +1,134 @@
+export const chapter6 = {
+  id: 6,
+  sections: [
+    {
+      id: 'intro', type: 'content', title: 'Thinking in Metaphors',
+      content: [
+        { type: 'text', value: 'Metaphors aren\'t decorative. They\'re not literary flourishes that writers sprinkle on top of plain meaning. According to cognitive linguists Lakoff and Johnson, metaphors are **fundamental to how we think**. We understand abstract concepts by mapping them onto concrete, physical experiences.' },
+        { type: 'callout', variant: 'key-concept', value: 'We don\'t just use metaphors in language. We think in metaphors. Time IS money. Arguments ARE wars. Understanding IS seeing. These aren\'t poetic choices — they\'re cognitive structures.' },
+        { type: 'text', value: 'For storytellers, this means metaphor isn\'t optional. It\'s the bridge between abstract meaning and embodied experience. When you write that a character\'s heart "sank," you\'re connecting an emotion to a physical sensation. The reader\'s brain processes both.' },
+      ],
+    },
+    {
+      id: 'embodied-language', type: 'content', title: 'Embodied Cognition',
+      content: [
+        { type: 'text', value: 'The theory of embodied cognition holds that our thinking is grounded in physical experience. We don\'t process language in a disembodied, computer-like way. We process it through our bodies.' },
+        { type: 'text', value: 'Evidence: when people read the word "kick," motor areas associated with leg movement activate. When they read "perfume," olfactory areas light up. **Language isn\'t separate from sensory experience — it\'s built on top of it.**' },
+        { type: 'tabs', tabs: [
+          { label: 'Embodied', content: '"She was crushed by the news." — Activates physical-pressure processing. The reader feels the weight. "His words stung." — Pain processing circuits echo. The reader flinches internally.' },
+          { label: 'Disembodied', content: '"She was emotionally affected by the news." — Processed as abstract information. No physical echo. "His words were unpleasant." — Semantic understanding only. No sting.' },
+        ] },
+        { type: 'text', value: 'This is why the writing advice "show, don\'t tell" works on a neurological level. Embodied language creates richer neural activation than abstract language. The reader literally feels more.' },
+      ],
+    },
+    {
+      id: 'quiz-1', type: 'quiz', quizType: 'formative', title: 'Embodied Language Check',
+      questions: [
+        {
+          id: 'ch6-q1', type: 'multiple-choice', conceptKey: 'embodied-language',
+          question: '"Show, don\'t tell" works neurologically because:',
+          options: [
+            { id: 'a', text: 'Showing requires more words, which keeps readers engaged longer', correct: false },
+            { id: 'b', text: 'Concrete, physical language activates more brain regions than abstract language', correct: true },
+            { id: 'c', text: 'Readers are visually oriented and prefer imagery', correct: false },
+            { id: 'd', text: 'Abstract language is grammatically weaker', correct: false },
+          ],
+          feedback: {
+            correct: 'Yes! Embodied language activates sensory, motor, and emotional circuits. Abstract language primarily activates language-processing areas only.',
+            incorrect: 'The key is **neural activation**. Concrete language triggers sensory/motor/emotional circuits. Abstract language mostly activates language areas alone.',
+          },
+          hint: 'What happens in the brain when you read "kick" vs. "moved their leg"?',
+        },
+      ],
+    },
+    {
+      id: 'sensory-metaphor', type: 'content', title: 'Sensory Metaphors',
+      content: [
+        { type: 'text', value: 'The most powerful metaphors map abstract concepts onto sensory experiences. We speak of warm personalities, sharp minds, dark moods, and sweet revenge. These aren\'t random pairings — they reflect deep cognitive structures.' },
+        { type: 'example', title: 'Sensory Metaphor Families', items: [
+          '**Temperature → Emotion/Social**: warm welcome, cold shoulder, heated argument, cool demeanor',
+          '**Weight → Importance**: heavy responsibility, light-hearted, weighty decision, unburdened',
+          '**Light → Knowledge/Morality**: bright student, dark secret, enlightened, shady character',
+          '**Taste → Experience**: sweet success, bitter defeat, sour relationship, a savory irony',
+        ] },
+        { type: 'text', value: 'For writers, this means choosing your metaphors isn\'t just about elegance. Different sensory domains create different neural effects. A "cold" betrayal feels different from a "burning" betrayal. Each activates different embodied circuits.' },
+      ],
+    },
+    {
+      id: 'symbolism', type: 'content', title: 'Symbols and Recurring Metaphors',
+      content: [
+        { type: 'text', value: 'Symbols are metaphors that accumulate meaning across a story. A recurring image — a red door, a ticking clock, a rising river — gains symbolic weight each time it appears. The brain\'s pattern-detection systems recognize the repetition and begin layering meaning.' },
+        { type: 'text', value: 'The best symbols aren\'t forced or allegorical. They emerge naturally from the story\'s world and gain meaning through context. Water in one story might symbolize danger; in another, cleansing; in another, the passage of time. Context determines meaning.' },
+        { type: 'callout', variant: 'insight', value: 'Don\'t assign symbols. Discover them. Often the images that your unconscious mind keeps returning to in a draft are the ones that carry the deepest symbolic weight. Your own brain is doing pattern-detection on your own story.' },
+      ],
+    },
+    {
+      id: 'exercise', type: 'exercise', title: 'Metaphor Workshop',
+      exercises: [
+        {
+          id: 'ch6-ex1', type: 'structured-template', xpReward: 100,
+          title: 'Metaphor Transformation',
+          instructions: 'Take an abstract emotional statement and transform it into embodied, metaphorical language using different sensory domains.',
+          fields: [
+            { id: 'abstract', label: 'Abstract statement', placeholder: 'e.g., "She felt anxious about the meeting"' },
+            { id: 'tactile', label: 'Rewrite using touch/pressure metaphors', placeholder: 'e.g., "The meeting pressed against her chest like a stone..."' },
+            { id: 'temperature', label: 'Rewrite using temperature metaphors', placeholder: 'e.g., "A cold dread pooled in her stomach..."' },
+            { id: 'movement', label: 'Rewrite using movement/spatial metaphors', placeholder: 'e.g., "Her thoughts circled the meeting like moths..."' },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'quiz-summative', type: 'quiz', quizType: 'summative', title: 'Chapter 6 Assessment', passingScore: 70,
+      questions: [
+        {
+          id: 'ch6-s1', type: 'multiple-choice', conceptKey: 'metaphor-cognition',
+          question: 'Lakoff and Johnson\'s key insight about metaphor is that:',
+          options: [
+            { id: 'a', text: 'Metaphors are the highest form of literary art', correct: false },
+            { id: 'b', text: 'We think in metaphors — they\'re cognitive structures, not just literary devices', correct: true },
+            { id: 'c', text: 'Metaphors should be avoided in clear writing', correct: false },
+            { id: 'd', text: 'Only poets use metaphors effectively', correct: false },
+          ],
+          feedback: { correct: 'Exactly! Metaphors are how we conceptualize abstract ideas. They\'re built into the architecture of thought.', incorrect: 'The radical insight is that metaphors aren\'t decorative — they\'re **cognitive structures** fundamental to how we think about abstract concepts.' },
+        },
+        {
+          id: 'ch6-s2', type: 'multiple-choice', conceptKey: 'sensory-metaphor',
+          question: 'Choosing different sensory domains for metaphors matters because:',
+          options: [
+            { id: 'a', text: 'Some metaphors are grammatically correct and others aren\'t', correct: false },
+            { id: 'b', text: 'Different sensory metaphors activate different brain circuits, creating distinct emotional effects', correct: true },
+            { id: 'c', text: 'Readers prefer visual metaphors above all others', correct: false },
+            { id: 'd', text: 'It prevents repetition in prose style', correct: false },
+          ],
+          feedback: { correct: 'Yes! A "cold" betrayal activates different circuits than a "burning" betrayal. The sensory domain shapes the emotional experience.', incorrect: 'Different sensory metaphors activate **different neural circuits**. The choice of domain shapes how the reader **feels** the meaning.' },
+        },
+        {
+          id: 'ch6-s3', type: 'multiple-choice', conceptKey: 'symbolic-meaning',
+          question: 'The most effective symbols in fiction are typically:',
+          options: [
+            { id: 'a', text: 'Explicitly explained by the narrator', correct: false },
+            { id: 'b', text: 'Universal archetypes with fixed meanings', correct: false },
+            { id: 'c', text: 'Images that emerge naturally and gain meaning through context and repetition', correct: true },
+            { id: 'd', text: 'Single-use metaphors that appear at the climax', correct: false },
+          ],
+          feedback: { correct: 'Perfect! Great symbols grow organically within a story, accumulating meaning through repetition and context.', incorrect: 'Effective symbols aren\'t assigned or explained — they **emerge** and gain meaning through **context and repetition**.' },
+        },
+      ],
+    },
+    {
+      id: 'summary', type: 'content', title: 'Chapter Summary',
+      content: [
+        { type: 'text', value: '## Key Takeaways from Chapter 6' },
+        { type: 'list', items: [
+          '**We think in metaphors** — they\'re cognitive structures, not decorations',
+          '**Embodied language** activates more brain regions than abstract language',
+          '**Sensory domain matters** — different metaphor families create different emotional effects',
+          '**"Show, don\'t tell"** works because embodied language triggers neural simulation',
+          '**Symbols accumulate meaning** through context and repetition — don\'t force them',
+        ] },
+        { type: 'callout', variant: 'next', value: '**Next up**: Chapter 7 — Cause & Effect. The brain\'s deepest need in storytelling: understanding WHY things happen.' },
+      ],
+    },
+  ],
+};

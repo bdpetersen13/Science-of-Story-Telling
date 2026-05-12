@@ -1,0 +1,173 @@
+export const chapter8 = {
+  id: 8,
+  sections: [
+    {
+      id: 'intro', type: 'content', title: 'The Story of Change',
+      content: [
+        { type: 'text', value: 'We\'ve arrived at the heart of it. Everything in this course — curiosity, neural models, world-building, theory of mind, salience, metaphor, cause and effect — converges on this single idea: **stories are about the moment a character\'s model of reality is forced to change**.' },
+        { type: 'callout', variant: 'key-concept', value: 'Change is not enough. Things changing — events happening, circumstances shifting — doesn\'t make a story. What makes a story is a character being forced to confront the gap between their model of reality and reality itself.' },
+        { type: 'text', value: 'Storr calls this the "ignition point" — the moment when a character\'s world model is disrupted and they must respond. But the ignition point doesn\'t create the flaw. It *reveals* a flaw that was already there, wired into the character\'s neural model from the beginning.' },
+      ],
+    },
+    {
+      id: 'meaningful-change', type: 'content', title: 'What Makes Change Meaningful',
+      content: [
+        { type: 'text', value: 'Not all change is story-worthy. A character who changes their hairstyle hasn\'t given us a story. A character who changes their fundamental belief about human nature has. The depth of change determines the depth of story.' },
+        { type: 'text', value: 'Meaningful change operates at the level of **identity**. It\'s not about what a character does — it\'s about who they *believe themselves to be*. When that core self-model is challenged, the stakes are existential.' },
+        { type: 'list', items: [
+          '**Surface change**: New job, new city, new relationship (situational)',
+          '**Behavioral change**: Acting differently in familiar situations (adaptive)',
+          '**Belief change**: Revising a core conviction about how the world works (psychological)',
+          '**Identity change**: Transforming the fundamental story they tell about who they are (existential)',
+        ] },
+        { type: 'text', value: 'The deepest stories operate at the identity level. The character\'s self-narrative — "I am the kind of person who..." — cracks and is rebuilt. This is why the best stories feel like they matter: they model the most profound kind of human transformation.' },
+      ],
+    },
+    {
+      id: 'quiz-1', type: 'quiz', quizType: 'formative', title: 'Levels of Change',
+      questions: [
+        {
+          id: 'ch8-q1', type: 'scenario', conceptKey: 'meaningful-change',
+          question: 'A character who was once selfish learns to sacrifice for others. At what level does this change operate?',
+          options: [
+            { id: 'a', text: 'Surface change — it\'s just a behavioral shift', correct: false },
+            { id: 'b', text: 'Behavioral change — they act differently but haven\'t changed inside', correct: false },
+            { id: 'c', text: 'Identity change — their fundamental self-narrative has transformed', correct: true },
+            { id: 'd', text: 'No real change — they\'re just adapting to circumstances', correct: false },
+          ],
+          feedback: {
+            correct: 'Yes! Going from "I am someone who puts myself first" to "I am someone who sacrifices for others" is a transformation of core identity. This is the deepest kind of story.',
+            incorrect: 'Moving from selfishness to sacrifice involves changing your fundamental **self-narrative** — who you believe yourself to be. That\'s identity-level change.',
+          },
+          hint: 'Does this change affect what the character believes about themselves at the deepest level?',
+        },
+      ],
+    },
+    {
+      id: 'ignition-point', type: 'content', title: 'The Ignition Point',
+      content: [
+        { type: 'text', value: 'The ignition point is distinct from the "inciting incident" in traditional story structure. The inciting incident is an external event. The ignition point is a **psychological moment** — the instant when the character\'s model of reality cracks.' },
+        { type: 'text', value: 'Sometimes these coincide. Sometimes they don\'t. A character might experience the inciting incident (their spouse asks for a divorce) but the ignition point comes later (the moment they realize they drove the spouse away). The external event happens TO them; the ignition happens INSIDE them.' },
+        { type: 'quote', value: 'The ignition point doesn\'t create the character\'s flaw. It reveals it. The flaw was there all along, woven into the character\'s neural model. The ignition point is the moment when reality applies enough pressure that the flaw can no longer be hidden.', attribution: 'Will Storr (paraphrased)' },
+      ],
+    },
+    {
+      id: 'character-driven', type: 'content', title: 'Character Is Plot',
+      content: [
+        { type: 'text', value: 'This is the grand unification of storytelling theory: **plot emerges from character**. A character\'s flawed model creates the conditions for conflict. Their responses to conflict — shaped by the flaw — escalate the situation. The escalation forces them to confront the flaw. The confrontation either breaks or transforms them.' },
+        { type: 'text', value: 'This means you don\'t need to invent plot separately from character. If you know your character deeply enough — their neural model, their flaw, their want and need — the plot will emerge from the collision between that character and the world.' },
+        { type: 'tabs', tabs: [
+          { label: 'Plot-First', content: '"I need a car chase in Act 2. What character can I put in a car?" This approach creates exciting events that feel disconnected from meaning. The character is a vehicle for spectacle.' },
+          { label: 'Character-First', content: '"My character can\'t admit she\'s wrong. What situation would make that flaw catastrophic?" This approach creates events that emerge inevitably from who the character is. Every scene is both plot AND character.' },
+        ] },
+        { type: 'callout', variant: 'insight', value: 'Plot-first stories entertain. Character-first stories transform. The difference is whether events feel arbitrary or inevitable.' },
+      ],
+    },
+    {
+      id: 'quiz-2', type: 'quiz', quizType: 'formative', title: 'Character-Driven Storytelling',
+      questions: [
+        {
+          id: 'ch8-q2', type: 'multiple-choice', conceptKey: 'character-driven-plot',
+          question: 'What does "character is plot" mean in practice?',
+          options: [
+            { id: 'a', text: 'Characters should narrate the plot directly', correct: false },
+            { id: 'b', text: 'Plot events should emerge from the character\'s flawed model of reality', correct: true },
+            { id: 'c', text: 'Plot doesn\'t matter as long as characters are well-developed', correct: false },
+            { id: 'd', text: 'Characters should always drive cars in the plot', correct: false },
+          ],
+          feedback: {
+            correct: 'Yes! When plot emerges from character psychology, every event feels inevitable rather than arbitrary. The character\'s flaw creates their problems.',
+            incorrect: 'It means that plot events should **emerge from** the character\'s flawed neural model. The character\'s psychology creates the situations they end up in.',
+          },
+          hint: 'Where should plot events come from?',
+        },
+      ],
+    },
+    {
+      id: 'exercise', type: 'exercise', title: 'The Transformation Workshop',
+      exercises: [
+        {
+          id: 'ch8-ex1', type: 'structured-template', xpReward: 150,
+          title: 'The Complete Character Arc',
+          instructions: 'Design a complete character transformation using everything from this course.',
+          fields: [
+            { id: 'model', label: 'Character\'s flawed neural model (their false belief about reality)', placeholder: 'e.g., "Love always leads to betrayal"' },
+            { id: 'origin', label: 'Where did this model come from? (Brief backstory)', placeholder: 'What experience wired this belief into their brain?' },
+            { id: 'want-need', label: 'Surface want vs. deep need', placeholder: 'What they pursue vs. what they actually need' },
+            { id: 'ignition', label: 'The ignition point (moment the model cracks)', placeholder: 'What forces them to confront the gap between their model and reality?' },
+            { id: 'crisis', label: 'The crisis (model vs. reality)', placeholder: 'The moment they must choose: defend the old model or embrace painful truth?' },
+            { id: 'transformation', label: 'The transformation (new model)', placeholder: 'How does their understanding of reality fundamentally change?' },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'quiz-summative', type: 'quiz', quizType: 'summative', title: 'Chapter 8 Final Assessment', passingScore: 70,
+      questions: [
+        {
+          id: 'ch8-s1', type: 'multiple-choice', conceptKey: 'meaningful-change',
+          question: 'According to Storr, what makes change "story-worthy"?',
+          options: [
+            { id: 'a', text: 'Any change to a character\'s circumstances', correct: false },
+            { id: 'b', text: 'Change that challenges a character\'s core beliefs or identity', correct: true },
+            { id: 'c', text: 'Change that is visible and dramatic', correct: false },
+            { id: 'd', text: 'Change that happens quickly and unexpectedly', correct: false },
+          ],
+          feedback: { correct: 'Yes! Story-worthy change operates at the level of belief and identity — the character\'s fundamental model of reality.', incorrect: 'Story-worthy change isn\'t about circumstances. It\'s about **identity** — change that challenges who the character believes themselves to be.' },
+        },
+        {
+          id: 'ch8-s2', type: 'multiple-choice', conceptKey: 'ignition-point',
+          question: 'The ignition point differs from the inciting incident because:',
+          options: [
+            { id: 'a', text: 'The ignition point happens earlier in the story', correct: false },
+            { id: 'b', text: 'The inciting incident is external; the ignition point is the psychological moment of model disruption', correct: true },
+            { id: 'c', text: 'The ignition point is always more dramatic', correct: false },
+            { id: 'd', text: 'They\'re the same thing with different names', correct: false },
+          ],
+          feedback: { correct: 'Exactly! The inciting incident happens TO the character. The ignition point happens INSIDE the character.', incorrect: 'The inciting incident is an **external event**. The ignition point is the **psychological moment** when the character\'s model cracks.' },
+        },
+        {
+          id: 'ch8-s3', type: 'multiple-choice', conceptKey: 'character-driven-plot',
+          question: 'Character-first storytelling creates plots that feel:',
+          options: [
+            { id: 'a', text: 'Slow and character-study focused', correct: false },
+            { id: 'b', text: 'Inevitable — as if the events could only have happened this way', correct: true },
+            { id: 'c', text: 'Predictable and therefore less exciting', correct: false },
+            { id: 'd', text: 'Limited to literary fiction genres', correct: false },
+          ],
+          feedback: { correct: 'Perfect! When events emerge from character, they feel inevitable. This is the mark of great storytelling across all genres.', incorrect: 'Character-driven plots feel **inevitable**, not slow or predictable. Every event emerges naturally from who the character is.' },
+        },
+        {
+          id: 'ch8-s4', type: 'multiple-choice', conceptKey: 'story-trigger',
+          question: 'A story trigger is most effective when it:',
+          options: [
+            { id: 'a', text: 'Creates entirely new problems unrelated to the character', correct: false },
+            { id: 'b', text: 'Reveals a pre-existing flaw in how the character understands the world', correct: true },
+            { id: 'c', text: 'Is the most dramatic event possible', correct: false },
+            { id: 'd', text: 'Happens at the exact midpoint of the story', correct: false },
+          ],
+          feedback: { correct: 'Yes! The best triggers don\'t create new problems — they expose old ones. The flaw was always there; the trigger makes it visible.', incorrect: 'Triggers are most powerful when they **reveal** a pre-existing flaw — not create new ones. The character\'s model was always cracked; the trigger exposes it.' },
+        },
+      ],
+    },
+    {
+      id: 'summary', type: 'content', title: 'Course Complete',
+      content: [
+        { type: 'text', value: '## Congratulations! 🎓' },
+        { type: 'text', value: 'You\'ve completed *The Science of Storytelling*. Let\'s revisit the grand arc of what you\'ve learned:' },
+        { type: 'list', items: [
+          '**Ch 1**: Stories begin with curiosity — the brain\'s hunger to close information gaps',
+          '**Ch 2**: The brain constructs models of reality — and treats them as truth',
+          '**Ch 3**: Specific detail triggers neural simulation — creating immersive worlds',
+          '**Ch 4**: Theory of mind lets us inhabit characters — fiction as empathy engine',
+          '**Ch 5**: Salience management — every detail is a promise to the reader',
+          '**Ch 6**: Metaphors are cognitive structures — embodied language activates the brain',
+          '**Ch 7**: Cause and effect — the brain\'s deepest narrative need',
+          '**Ch 8**: Meaningful change — when a character\'s model of reality transforms',
+        ] },
+        { type: 'callout', variant: 'key-concept', value: 'The grand theory: Stories work because they model the brain\'s own experience of reality — a constructed world, populated by minds we try to understand, connected by cause and effect, and driven by the drama of models changing under pressure from the real world.' },
+        { type: 'text', value: 'Keep reviewing your concepts in the spaced repetition system. Keep practicing with the exercises. And most importantly — keep writing. The science illuminates the craft, but the craft is in the doing.' },
+      ],
+    },
+  ],
+};

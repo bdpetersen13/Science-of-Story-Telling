@@ -1,0 +1,374 @@
+@import "tailwindcss";
+
+@theme {
+  /* Walmart Brand Colors */
+  --color-blue-5: #e5effc;
+  --color-blue-10: #ccdffb;
+  --color-blue-50: #4d8bef;
+  --color-blue-100: #0053e2;
+  --color-blue-110: #004ac9;
+  --color-blue-130: #003899;
+  --color-blue-160: #002266;
+  --color-blue-180: #001133;
+
+  --color-spark-5: #fff8e6;
+  --color-spark-10: #fff2cc;
+  --color-spark-50: #ffd966;
+  --color-spark-100: #ffc220;
+  --color-spark-140: #995213;
+  --color-spark-180: #33200a;
+
+  --color-red-5: #fde5e3;
+  --color-red-10: #fecbc7;
+  --color-red-50: #f4685e;
+  --color-red-100: #ea1100;
+  --color-red-130: #a30c00;
+  --color-red-160: #6d0800;
+
+  --color-green-5: #e8f4e3;
+  --color-green-10: #d1e9c6;
+  --color-green-50: #6db652;
+  --color-green-100: #2a8703;
+  --color-green-130: #1d5f02;
+  --color-green-160: #133e01;
+
+  --color-gray-5: #f8f8fa;
+  --color-gray-10: #efefef;
+  --color-gray-20: #e0e0e0;
+  --color-gray-50: #8c8c8c;
+  --color-gray-100: #595959;
+  --color-gray-130: #333333;
+  --color-gray-160: #1a1a1a;
+  --color-gray-180: #0d0d0d;
+
+  --color-cyan-5: #e0f7fa;
+  --color-cyan-10: #b2ebf2;
+  --color-cyan-50: #26c6da;
+  --color-cyan-100: #0097a7;
+
+  /* Surfaces */
+  --color-surface: #ffffff;
+  --color-surface-raised: #ffffff;
+  --color-surface-overlay: rgba(255, 255, 255, 0.72);
+  --color-surface-page: #f8f8fa;
+
+  /* Font */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ===== Base ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-gray-160);
+  background-color: var(--color-surface-page);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  letter-spacing: -0.011em;
+}
+
+/* ===== Apple-style Typography ===== */
+
+.text-display {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.text-headline {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.text-title {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.text-body-prominent {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.6;
+}
+
+.text-caption {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+/* ===== Elevated Surfaces (Apple-style depth) ===== */
+
+.surface-card {
+  background: var(--color-surface);
+  border-radius: 20px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.03),
+    0 2px 4px rgba(0, 0, 0, 0.02),
+    0 12px 24px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.surface-card:hover {
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.03),
+    0 4px 8px rgba(0, 0, 0, 0.04),
+    0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.surface-card-interactive:hover {
+  transform: translateY(-2px);
+}
+
+.surface-card-subtle {
+  background: var(--color-surface);
+  border-radius: 16px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.04),
+    0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* Glassmorphism */
+.surface-glass {
+  background: var(--color-surface-overlay);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* ===== Gradients ===== */
+
+.gradient-hero {
+  background: linear-gradient(135deg, #0053e2 0%, #003899 40%, #001133 100%);
+}
+
+.gradient-hero-warm {
+  background: linear-gradient(135deg, #0053e2 0%, #4d8bef 50%, #ccdffb 100%);
+}
+
+.gradient-celebration {
+  background: linear-gradient(135deg, #ffc220 0%, #ffd966 50%, #fff2cc 100%);
+}
+
+.gradient-subtle {
+  background: linear-gradient(180deg, var(--color-surface-page) 0%, #ffffff 100%);
+}
+
+/* ===== Focus & Accessibility ===== */
+
+:focus-visible {
+  outline: 3px solid var(--color-blue-100);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  padding: 12px 20px;
+  background: var(--color-blue-100);
+  color: white;
+  border-radius: 0 0 12px 12px;
+  z-index: 9999;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ===== Reduced Motion ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===== Custom Scrollbar ===== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Selection ===== */
+
+::selection {
+  background: var(--color-blue-10);
+  color: var(--color-blue-160);
+}
+
+/* ===== Dark Mode ===== */
+
+.dark {
+  /* Override surface colors */
+  --color-surface: #1a1a1a;
+  --color-surface-raised: #242424;
+  --color-surface-overlay: rgba(26, 26, 26, 0.85);
+  --color-surface-page: #0d0d0d;
+
+  /* Invert gray scale for text/borders */
+  --color-gray-5: #1a1a1a;
+  --color-gray-10: #242424;
+  --color-gray-20: #333333;
+  --color-gray-50: #8c8c8c;
+  --color-gray-100: #a6a6a6;
+  --color-gray-130: #d9d9d9;
+  --color-gray-160: #f0f0f0;
+  --color-gray-180: #fafafa;
+
+  /* Adjust brand colors for dark mode (slightly brighter) */
+  --color-blue-5: #0d1f3d;
+  --color-blue-10: #142d52;
+  --color-blue-50: #4d8bef;
+  --color-blue-100: #4d8bef;
+  --color-blue-110: #6b9ef2;
+  --color-blue-130: #8fb4f5;
+  --color-blue-160: #ccdffb;
+  --color-blue-180: #e5effc;
+
+  --color-spark-5: #33200a;
+  --color-spark-10: #4d3010;
+  --color-spark-50: #ffd966;
+  --color-spark-100: #ffc220;
+  --color-spark-140: #ffd966;
+  --color-spark-180: #fff8e6;
+
+  --color-red-5: #3d1410;
+  --color-red-10: #521c17;
+  --color-red-50: #f4685e;
+  --color-red-100: #ff6b5e;
+  --color-red-130: #ff8a7f;
+  --color-red-160: #fecbc7;
+
+  --color-green-5: #0f2a0a;
+  --color-green-10: #1a3d12;
+  --color-green-50: #6db652;
+  --color-green-100: #4ade4a;
+  --color-green-130: #6ee96e;
+  --color-green-160: #d1e9c6;
+
+  --color-cyan-5: #0a2426;
+  --color-cyan-10: #123438;
+  --color-cyan-50: #26c6da;
+  --color-cyan-100: #4dd8e8;
+}
+
+.dark body {
+  color: var(--color-gray-160);
+  background-color: var(--color-surface-page);
+}
+
+.dark .surface-card {
+  background: var(--color-surface);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.dark .surface-card:hover {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.dark .surface-card-subtle {
+  background: var(--color-surface);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dark .surface-glass {
+  background: var(--color-surface-overlay);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .gradient-hero {
+  background: linear-gradient(135deg, #001133 0%, #002266 40%, #0053e2 100%);
+}
+
+.dark ::selection {
+  background: var(--color-blue-130);
+  color: var(--color-gray-5);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Dark mode utility overrides for common patterns */
+.dark .bg-white {
+  background-color: var(--color-surface);
+}
+
+.dark .bg-gray-5\/80,
+.dark .bg-gray-5\/60 {
+  background-color: var(--color-gray-10);
+}
+
+.dark .border-gray-10\/60,
+.dark .border-gray-10 {
+  border-color: var(--color-gray-20);
+}
+
+.dark .text-white {
+  color: #ffffff;
+}
+
+/* Dark mode input styling */
+.dark input[type="range"] {
+  accent-color: var(--color-blue-100);
+}
+
+.dark input:focus,
+.dark textarea:focus,
+.dark select:focus {
+  background-color: var(--color-gray-10);
+}
+
+/* Dark mode for toggle backgrounds */
+.dark .bg-gray-20 {
+  background-color: var(--color-gray-50);
+}
